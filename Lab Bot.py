@@ -8,8 +8,9 @@ from keyboa import keyboa_maker
 import random
 from PIL import Image
 from urllib.request import urlopen
-# токен хранится в отдельном файле config, который добавляем в гитигнор
-from config import token
+import os
+
+token = os.environ.get('token')
 
 # инициируем бота: обращаемся к библиотеке telebot, к классу, который берет на вход токен
 bot = telebot.TeleBot(token)
