@@ -6,9 +6,10 @@ from keyboa import keyboa_maker
 import random
 from PIL import Image
 from urllib.request import urlopen
+# токен хранится в отдельном файле config, который добавляем в гитигнор
+from config import token
 
 # инициируем бота: обращаемся к библиотеке telebot, к классу, который берет на вход токен
-token = '1675528855:AAFL28ZK7AejjIbJHUbhb_md9k_QcOrlSUQ'
 bot = telebot.TeleBot(token)
 
 # смайлики для инлайн клавиатуры для реакции на отправку мемов
