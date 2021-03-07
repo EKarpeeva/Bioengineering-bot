@@ -1,0 +1,7 @@
+requests == 2.20.0
+telebot
+pytelegrambotapi
+telebot
+boto3
+Pillow
+keyboa
